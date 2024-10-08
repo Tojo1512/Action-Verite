@@ -1,0 +1,13 @@
+type,category,content,timer
+action,standard,Chante ta chanson préférée,30
+vérité,standard,Quel est ton plus grand rêve ?,
+action,standard,Fais 10 pompes,20
+vérité,standard,Quelle est ta plus grande peur ?,
+action,drole,Imite ton animal préféré,15
+vérité,drole,Raconte ta blague la plus drôle,
+action,drole,Fais une danse ridicule pendant 30 secondes,30
+vérité,drole,Quelle est la chose la plus embarrassante que tu aies faite ?,
+action,hot,Fais un câlin à la personne à ta gauche,10
+vérité,hot,Quel est ton fantasme le plus fou ?,
+action,hot,Fais un massage de 1 minute à la personne de ton choix,60
+vérité,hot,Quelle est la partie du corps que tu préfères chez ton/ta partenaire ?,
