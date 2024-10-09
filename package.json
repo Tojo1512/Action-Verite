@@ -9,13 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "action-verite": "file:",
     "gsap": "^3.12.5",
     "vue": "^3.3.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
     "typescript": "^5.0.2",
-    "vite": "^4.3.9",
+    "vite": "^4.5.5",
     "vue-tsc": "^1.4.2"
   }
 }

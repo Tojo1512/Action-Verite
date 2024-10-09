@@ -2,6 +2,7 @@
 import { ref } from 'vue';
 import Home from './components/Home.vue';
 import Game from './components/Game.vue';
+import Copyright from './components/Copyright.vue';
 
 const currentPage = ref('home');
 const selectedCategory = ref('');
@@ -20,6 +21,9 @@ const goHome = () => {
   <div class="container">
     <Home v-if="currentPage === 'home'" @start-game="startGame" />
     <Game v-else :category="selectedCategory" @go-home="goHome" />
+  </div>
+  <div class="footer-container">
+    <Copyright />
   </div>
 </template>
 
@@ -44,5 +48,14 @@ button {
 
 h1, h2 {
   color: #333;
+}
+
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
 }
 </style>
