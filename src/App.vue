@@ -2,6 +2,7 @@
 import { ref } from 'vue';
 import Home from './components/Home.vue';
 import Game from './components/Game.vue';
+import Copyright from './components/Copyright.vue';
 
 const currentPage = ref('home');
 const selectedCategory = ref('');
@@ -21,6 +22,9 @@ const goHome = () => {
     <Home v-if="currentPage === 'home'" @start-game="startGame" />
     <Game v-else :category="selectedCategory" @go-home="goHome" />
   </div>
+  <footer>
+    <Copyright />
+  </footer>
 </template>
 
 <style>
