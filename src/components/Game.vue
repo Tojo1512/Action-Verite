@@ -84,7 +84,6 @@ onMounted(() => {
 
 <template>
   <div class="game-container">
-    <button @click="$emit('go-home')">Retour à l'accueil</button>
     <h1>Action ou Vérité - {{ category }}</h1>
     <div class="split-screen">
       <div class="action-section" @click="getRandomQuestion('action')">
@@ -101,7 +100,7 @@ onMounted(() => {
         Temps restant: {{ remainingTime }}s
       </div>
     </div>
-    
+    <button @click="$emit('go-home')">Retour à l'accueil</button>
   </div>
 </template>
 
