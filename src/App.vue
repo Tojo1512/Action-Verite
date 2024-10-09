@@ -22,9 +22,9 @@ const goHome = () => {
     <Home v-if="currentPage === 'home'" @start-game="startGame" />
     <Game v-else :category="selectedCategory" @go-home="goHome" />
   </div>
-  <footer>
+  <div class="footer-container">
     <Copyright />
-  </footer>
+  </div>
 </template>
 
 <style>
@@ -48,5 +48,14 @@ button {
 
 h1, h2 {
   color: #333;
+}
+
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
 }
 </style>
